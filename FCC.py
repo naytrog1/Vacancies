@@ -8,7 +8,8 @@ a =  1 #Lattice Constant
 XL = np.array([]) #X List
 YL = np.array([]) #Y List
 ZL = np.array([]) #Z List
-copiesX = 50; copiesY = 50; copiesZ = 50 #Generate Starting Cube
+copiesX = 1; copiesY = 1; copiesZ = 1 #Number of copies on each direction
+
 '''Face Centered Cubic Lattice Cells Function'''
 
 def FCCLattice(a,XL,YL,ZL,copiesX,copiesY,copiesZ):
