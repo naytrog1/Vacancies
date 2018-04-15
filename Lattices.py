@@ -3,8 +3,8 @@ import numpy as np
 '''Atom Name'''
 Atom = 'Au'
 '''Constants'''
-a =  1.5 #Lattice Constant
-NX, NY, NZ = 1,1,1 #Number of copies on each direction
+a =  2.6 #Lattice Constant
+NX, NY, NZ = 5,5,5 #Number of copies on each direction
 Type = 'fcc'
 
 #vmd gdis xmakemol xcrysden vesta
