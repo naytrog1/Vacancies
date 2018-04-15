@@ -3,16 +3,17 @@ import numpy as np
 '''Atom Name'''
 Atom = 'Au'
 '''Constants'''
-a =  2.6 #Lattice Constant
-NX, NY, NZ = 5,5,5 #Number of copies on each direction
+a =  3.7 #Lattice Constant
+NX, NY, NZ = 10,10,5 #Number of copies on each direction
 Type = 'fcc'
+vacancies = 50
 
 #vmd gdis xmakemol xcrysden vesta
 
 '''Cubic Lattice Cells Function'''
 
 def Lattice(Atom,Type,a,NX,NY,NZ):
-	Matrix = np.empty((0,3),)
+	Matrix = np.empty((0,3),object) #object to combine string and floats
 	if Type == 'sc':
 		Base = np.array([[0,0,0]], float)
 		Base = Base*a
@@ -42,21 +43,21 @@ def Lattice(Atom,Type,a,NX,NY,NZ):
 N_atoms, Matrix = Lattice(Atom,Type,a,NX,NY,NZ)
 
 '''Save the perfect Latticce'''
-np.savetxt(Atom+'-'+Type+'-perfect.xyz',Matrix,fmt="%s",header=str(N_atoms)+'\n', comments="")
-
+np.savetxt(Atom+'-'+Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
+print(N_atoms)
 '''Function that Make vacancies'''
 
 def Vacancies_Lattice(N_atoms,Matrix,vacancies):
 	for i in range(vacancies):
-		k = np.random.randint(N_atoms) #index 
+		k = np.random.randint(N_atoms-i) #index decreasing on each loop
 		Matrix = np.delete(Matrix,k,0) #new matrix without the atom corresponding to the index
 	N_atoms = N_atoms - vacancies
 	return N_atoms, Matrix
-vacancies = 1
+
 N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,vacancies)
 
 '''Save the Latticce with vacancies'''
 
-np.savetxt(Atom+'-'+Type+'-vacancies.xyz',Matrix,fmt="%s",header=str(N_atoms)+'\n', comments="")
+np.savetxt(Atom+'-'+Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
 
 
