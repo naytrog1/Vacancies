@@ -45,7 +45,7 @@ def Vacancies_Lattice(N_atoms,Matrix,vacancies):
 
 def Main():
 	parser = argparse.ArgumentParser(description='Script to create perfect and vacancies lattices', \
-									epilog="If you use -vacancies type: -vacancies [number of vacancies]")
+						epilog="If you use -vacancies type: -vacancies [number of vacancies]")
 	'''Positional Arguments'''
 	parser.add_argument("Element",help="Quimical Element",type=str)
 	parser.add_argument("Type",help="Lattice Type",type=str)
