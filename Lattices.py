@@ -41,9 +41,7 @@ def Lattice(Atom,Type,a,NX,NY,NZ):
 	AtomL = np.tile(Atom,Matrix.shape[0])[None].T #create a tanposed row with the name of the atom
 	Matrix = np.hstack([AtomL,Matrix]) # add the column made above to the matrix
 	return N_atoms,Matrix
-#N_atoms, Matrix = Lattice(Atom,Type,a,NX,NY,NZ)
 
-'''Save the perfect Latticce'''
 #np.savetxt(Atom+'-'+Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
 
 '''Function that Make vacancies'''
@@ -71,9 +69,19 @@ def Main():
 	parser.add_argument("NY",help="Copies in Y",type=int)
 	parser.add_argument("NZ",help="Copies in Z",type=int)
 
+	parser.add_argument("-o","--output",help="output the "+ \
+						"result to a file",action="store_true")
+
 	args = parser.parse_args()
 
 	N_atoms, Matrix = Lattice(args.Element,args.Type,args.Constant,args.NX,args.NY,args.NZ)
+	
+	'''Save the perfect Latticce'''
+	
+	if args.output:
+		np.savetxt(args.Element+'-'+args.Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
+					header=str(N_atoms)+'\n', comments="")
+
 	print(N_atoms)
 	print(Matrix)
 
