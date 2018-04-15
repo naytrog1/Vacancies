@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 import numpy as np
+import argparse
 '''Atom Name'''
-Atom = 'Au'
+#Atom = 'Au'
 '''Constants'''
-a =  3.7 #Lattice Constant
-NX, NY, NZ = 10,10,5 #Number of copies on each direction
-Type = 'fcc'
-vacancies = 50
+#a =  3.7 #Lattice Constant
+#NX, NY, NZ = 10,10,5 #Number of copies on each direction
+#Type = 'fcc'
+#vacancies = 50
 
 #vmd gdis xmakemol xcrysden vesta
 
@@ -40,11 +41,11 @@ def Lattice(Atom,Type,a,NX,NY,NZ):
 	AtomL = np.tile(Atom,Matrix.shape[0])[None].T #create a tanposed row with the name of the atom
 	Matrix = np.hstack([AtomL,Matrix]) # add the column made above to the matrix
 	return N_atoms,Matrix
-N_atoms, Matrix = Lattice(Atom,Type,a,NX,NY,NZ)
+#N_atoms, Matrix = Lattice(Atom,Type,a,NX,NY,NZ)
 
 '''Save the perfect Latticce'''
-np.savetxt(Atom+'-'+Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
-print(N_atoms)
+#np.savetxt(Atom+'-'+Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
+
 '''Function that Make vacancies'''
 
 def Vacancies_Lattice(N_atoms,Matrix,vacancies):
@@ -54,10 +55,31 @@ def Vacancies_Lattice(N_atoms,Matrix,vacancies):
 	N_atoms = N_atoms - vacancies
 	return N_atoms, Matrix
 
-N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,vacancies)
+#N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,vacancies)
 
 '''Save the Latticce with vacancies'''
 
-np.savetxt(Atom+'-'+Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
+#np.savetxt(Atom+'-'+Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f",header=str(N_atoms)+'\n', comments="")
+
+def Main():
+	parser = argparse.ArgumentParser()
+
+	parser.add_argument("Element",help="Quimical Element",type=str)
+	parser.add_argument("Type",help="Lattice Type",type=str)
+	parser.add_argument("Constant",help="Lattice Constant",type=float)
+	parser.add_argument("NX",help="Copies in X",type=int)
+	parser.add_argument("NY",help="Copies in Y",type=int)
+	parser.add_argument("NZ",help="Copies in Z",type=int)
+
+	args = parser.parse_args()
+
+	N_atoms, Matrix = Lattice(args.Element,args.Type,args.Constant,args.NX,args.NY,args.NZ)
+	print(N_atoms)
+	print(Matrix)
+
+if __name__ == '__main__':
+	Main()
+
+
 
 
