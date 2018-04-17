@@ -36,19 +36,24 @@ def Lattice(Atom,Type,a,NX,NY,NZ):
 
 '''Function that Make vacancies'''
 
-def Vacancies_Lattice(N_atoms,Matrix,vacancies):
-	for i in range(vacancies):
+def Vacancies_Lattice(N_atoms,Matrix,Pvacancies):
+
+	r = (N_atoms*Pvacancies)*.01 #Percentage of atoms to remove
+
+	r = int(r) 	#Integer below, closest to percentage
+
+	for i in range(r):
 		k = np.random.randint(N_atoms-i) #index decreasing on each loop
 		Matrix = np.delete(Matrix,k,0) #new matrix without the atom corresponding to the index
-	N_atoms = N_atoms - vacancies
+	N_atoms = N_atoms - r
 	return N_atoms, Matrix
 
 def Main():
 	parser = argparse.ArgumentParser(description='Script to create and output perfect and vacancies lattices to a xyz file' ,\
-						epilog="If you want to create vacancies type: -v [number of vacancies]")
+						epilog="If you want to create vacancies, type: -v [number of vacancies], dtype = float")
 	
 	'''Required Arguments'''
-	
+
 	parser.add_argument("-e","--Element",metavar='',help="Quimical Element",required=True,type=str)
 	parser.add_argument("-t","--Type",metavar='',help="Lattice Type",required=True,type=str)
 	parser.add_argument("-a","--Constant",metavar='',help="Lattice Constant",required=True,type=float)
@@ -58,7 +63,7 @@ def Main():
 
 	'''Optional Arguments'''
 	
-	parser.add_argument("-v","--Vacancies",metavar='',help="Create the number of vacancies",type=int)
+	parser.add_argument("-v","--Pvacancies",metavar='',help="Create the percentage of vacancies",type=float)
 
 	args = parser.parse_args()
 
@@ -71,9 +76,9 @@ def Main():
 
 	'''Save the Latticce with vacancies'''
 
-	if args.Vacancies:
+	if args.Pvacancies:
 
-		N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.Vacancies)
+		N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.Pvacancies)
 		np.savetxt(args.Element+'-'+args.Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
 					header=str(N_atoms)+'\n', comments="")
 
