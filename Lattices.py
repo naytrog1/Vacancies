@@ -44,38 +44,36 @@ def Vacancies_Lattice(N_atoms,Matrix,vacancies):
 	return N_atoms, Matrix
 
 def Main():
-	parser = argparse.ArgumentParser(description='Script to create perfect and vacancies lattices', \
-						epilog="If you use -vacancies type: -vacancies [number of vacancies]")
+	parser = argparse.ArgumentParser(description='Script to create and output perfect and vacancies lattices to a xyz file' ,\
+						epilog="If you want to create vacancies type: -v [number of vacancies]")
 	'''Positional Arguments'''
-	parser.add_argument("Element",help="Quimical Element",type=str)
-	parser.add_argument("Type",help="Lattice Type",type=str)
-	parser.add_argument("Constant",help="Lattice Constant",type=float)
-	parser.add_argument("NX",help="Copies in X",type=int)
-	parser.add_argument("NY",help="Copies in Y",type=int)
-	parser.add_argument("NZ",help="Copies in Z",type=int)
+	parser.add_argument("-e","--Element",metavar='',help="Quimical Element",required=True,type=str)
+	parser.add_argument("-t","--Type",metavar='',help="Lattice Type",required=True,type=str)
+	parser.add_argument("-a","--Constant",metavar='',help="Lattice Constant",required=True,type=float)
+	parser.add_argument("-nx","--NX",metavar='',help="Copies in X",required=True,type=int)
+	parser.add_argument("-ny","--NY",metavar='',help="Copies in Y",required=True,type=int)
+	parser.add_argument("-nz","--NZ",metavar='',help="Copies in Z",required=True,type=int)
 
 	'''Optional Arguments'''
-	parser.add_argument("-o","--output",help="Output the "+ \
-						"result to a file",action="store_true")
+	#parser.add_argument("-o","--output",help="Output the "+ \
+	#					"result to a file",action="store_true")
 	
-	parser.add_argument("-vacancies",help="Create the number of vacancies",type=int)
+	parser.add_argument("-v","--Vacancies",metavar='',help="Create the number of vacancies",type=int)
 
 	args = parser.parse_args()
 
 	N_atoms, Matrix = Lattice(args.Element,args.Type,args.Constant,args.NX,args.NY,args.NZ)
 	
 	'''Save the perfect Latticce'''
-	
-	if args.output:
 
-		np.savetxt(args.Element+'-'+args.Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
+	np.savetxt(args.Element+'-'+args.Type+'-perfect.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
 					header=str(N_atoms)+'\n', comments="")
 
 	'''Save the Latticce with vacancies'''
 
-	if args.output and args.vacancies:
+	if args.Vacancies:
 
-		N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.vacancies)
+		N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.Vacancies)
 		np.savetxt(args.Element+'-'+args.Type+'-vacancies.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
 					header=str(N_atoms)+'\n', comments="")
 
