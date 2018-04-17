@@ -46,7 +46,9 @@ def Vacancies_Lattice(N_atoms,Matrix,vacancies):
 def Main():
 	parser = argparse.ArgumentParser(description='Script to create and output perfect and vacancies lattices to a xyz file' ,\
 						epilog="If you want to create vacancies type: -v [number of vacancies]")
-	'''Positional Arguments'''
+	
+	'''Required Arguments'''
+	
 	parser.add_argument("-e","--Element",metavar='',help="Quimical Element",required=True,type=str)
 	parser.add_argument("-t","--Type",metavar='',help="Lattice Type",required=True,type=str)
 	parser.add_argument("-a","--Constant",metavar='',help="Lattice Constant",required=True,type=float)
@@ -55,8 +57,6 @@ def Main():
 	parser.add_argument("-nz","--NZ",metavar='',help="Copies in Z",required=True,type=int)
 
 	'''Optional Arguments'''
-	#parser.add_argument("-o","--output",help="Output the "+ \
-	#					"result to a file",action="store_true")
 	
 	parser.add_argument("-v","--Vacancies",metavar='',help="Create the number of vacancies",type=int)
 
