@@ -49,7 +49,7 @@ def Vacancies_Lattice(N_atoms,Matrix,Pvacancies):
 	return N_atoms, Matrix
 
 def Main():
-	parser = argparse.ArgumentParser(description='Script to create and output perfect and vacancies lattices to a xyz file' ,\
+	parser = argparse.ArgumentParser(description='Script to create and output perfect and vacancies lattices to a xyz file',\
 				epilog="If you want to create vacancies, type: -v [Percentage of vacancies], dtype = float")
 	
 	'''Required Arguments'''
