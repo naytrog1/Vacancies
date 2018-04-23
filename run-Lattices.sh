@@ -1,24 +1,22 @@
 #!/bin/bash
-a = 1      # Lattice parameter of gold (Au)
 Element="Au"
-Struct="fcc" 
-NX= 2 
-NY= 2
-NZ= 1
-
-PBC="true"
-Struc="FCC"
+Type="fcc"
+Constant=1
+NX=1 
+NY=1
+NZ=1
+PV=50.0
 
 if [ "$1" == "" ]; then
  echo "USAGE:"
- echo "     ./run-searchfill  input-file.xyz"
+ echo "     ./run-Lattices"
  exit
 fi
 
 date
 echo ""
 echo "############################################################"
-../searchfill $1 -e $Element -t $Type -a $a -nx $NX -ny $NY -nz $NZ -v $PV
+./Lattices $1 -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -v $PV
 echo "############################################################"
 echo ""
 date
