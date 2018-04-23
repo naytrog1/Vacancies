@@ -16,7 +16,7 @@ fi
 date
 echo ""
 echo "############################################################"
-./Lattices $1 -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -v $PV
+./Lattices.py $1 -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -v $PV
 echo "############################################################"
 echo ""
 date
