@@ -5,7 +5,7 @@ Constant=1
 NX=1 
 NY=1
 NZ=1
-PV=50.0
+PV=25.0
 
 if [ "$1" == "" ]; then
  echo "USAGE:"
