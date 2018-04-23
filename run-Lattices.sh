@@ -9,7 +9,7 @@ PV=25.0
 
 if [ "$1" == "" ]; then
  echo "USAGE:"
- echo "     ./run-Lattices"
+ echo "     ./run-Lattices     "
  exit
 fi
 
