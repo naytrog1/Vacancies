@@ -7,16 +7,10 @@ NY=1
 NZ=1
 PV=25.0
 
-if [ "$1" == "" ]; then
- echo "USAGE:"
- echo "     ./run-Lattices     "
- exit
-fi
-
 date
 echo ""
 echo "############################################################"
-./Lattices.py $1 -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -v $PV
+./Lattices.py -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -v $PV
 echo "############################################################"
 echo ""
 date
