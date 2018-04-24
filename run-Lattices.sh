@@ -1,10 +1,10 @@
 #!/bin/bash
 Element="Au"
 Type="fcc"
-Constant=1
-NX=1 
-NY=1
-NZ=1
+Constant=4.08
+NX=10
+NY=10
+NZ=20
 PV=25.0
 
 date
