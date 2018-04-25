@@ -1,0 +1,5 @@
+Element	Structure	Lattice Constant	Copies in X	Copies in Y	Copies in Z	Large on X	Large on Y	Large on Z	Number of Atoms	Vacancies Overlap	Vacancies Percentage	Number of Vacancies	Vacancies Found	Percentage found				
+Au	FCC	4.08	10	10	20	40.8	40.8	81.6	8000	0.76	25%	2000	1796	89.80%				
+Au	FCC	4.08	10	10	20	40.8	40.8	81.6	8000	0.76	50%	4000	3474	86.85%				
+Au	FCC	4.08	10	10	20	40.8	40.8	81.6	8000	0.76	13%	1040	985	94.71%				
+Au	FCC	4.08	10	10	20	40.8	40.8	81.6	8000	0.76	73%	5840						
