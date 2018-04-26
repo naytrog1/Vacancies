@@ -1,0 +1,7 @@
+Element,Structure,Lattice_Constant,Base_Vectors,Copies_in_X,Copies_in_Y,Copies_in_Z,Large_on_X,Large_on_Y,Large_on_Z,Number_of_Atoms,Vacancies_Overlap,Vacancies_Percentage,Number_of_Vacancies,Vacancies_Found,Percentage_found,,,,
+Au,FCC,4.08,4,10,10,20,40.8,40.8,81.6,8000,0.76,0.05,400,394,0.99,,,,
+Au,FCC,4.08,4,10,10,20,40.8,40.8,81.6,8000,0.76,0.13,1040,985,0.95,,,,
+Au,FCC,4.08,4,10,10,20,40.8,40.8,81.6,8000,0.76,0.25,2000,1796,0.90,,,,
+Au,FCC,4.08,4,10,10,20,40.8,40.8,81.6,8000,0.76,0.50,4000,3474,0.87,,,,
+Au,FCC,4.08,4,10,10,20,40.8,40.8,81.6,8000,0.76,0.73,5840,5329,0.91,,,,
+Li,BCC,3.51,2,10,10,10,35.1,35.1,35.1,2000,0.16,0.50,,,,,,,
