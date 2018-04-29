@@ -1,0 +1,116 @@
+ANALYZING /home/alumno08/practica1/Vacancies/Li-bcc/Li-bcc-vacancies-output_2.xyz
+Using VACOVP = 0.16
+Using cell dimensions LX= 7.02 LY= 7.02 LZ= 7.02
+Lattice parameter: a= 3.51
+Stucture Type: BCC
+Using value R1= 3.03975
+Using value R2= 3.51
+Using value R0= 1.63744
+Periodic Boundary Conditions: True
+
+NATOMS=8 old_vac= 0
+-> 8 atoms, CoM = 2.85187, 1.97437, 2.41312
+Average overlap is : 1.0283
+Ideal overlap is   : 3.83063
+Min/Max overlap is : 1.02264/1.03774
+        at atoms 0 and 5 respectively.
+Min/Max coordin is : 3/5
+Limit overlap choosed is : 1.0283
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 0   Vacancies= 0
+**************************************************************************
+
+NATOMS=8 old_vac= 0
+-> 8 atoms, CoM = 2.85187, 1.97437, 2.41312
+Average overlap is : 1.0283
+Ideal overlap is   : 3.83063
+Min/Max overlap is : 1.02264/1.03774
+        at atoms 0 and 5 respectively.
+Min/Max coordin is : 3/5
+Limit overlap choosed is : 1.0283
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 1   Vacancies= 0
+**************************************************************************
+
+NATOMS=8 old_vac= 0
+-> 8 atoms, CoM = 2.85187, 1.97437, 2.41312
+Average overlap is : 1.0283
+Ideal overlap is   : 3.83063
+Min/Max overlap is : 1.02264/1.03774
+        at atoms 0 and 5 respectively.
+Min/Max coordin is : 3/5
+Limit overlap choosed is : 1.0283
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 2   Vacancies= 0
+**************************************************************************
+
+NATOMS=8 old_vac= 0
+-> 8 atoms, CoM = 2.85187, 1.97437, 2.41312
+Average overlap is : 1.0283
+Ideal overlap is   : 3.83063
+Min/Max overlap is : 1.02264/1.03774
+        at atoms 0 and 5 respectively.
+Min/Max coordin is : 3/5
+Limit overlap choosed is : 1.0283
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 3   Vacancies= 0
+**************************************************************************
+
+NATOMS=8 old_vac= 0
+-> 8 atoms, CoM = 2.85187, 1.97437, 2.41312
+Average overlap is : 1.0283
+Ideal overlap is   : 3.83063
+Min/Max overlap is : 1.02264/1.03774
+        at atoms 0 and 5 respectively.
+Min/Max coordin is : 3/5
+Limit overlap choosed is : 1.0283
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 4   Vacancies= 0
+**************************************************************************
+
+-> TOTAL NUMBER OF VACANCIES:  0
