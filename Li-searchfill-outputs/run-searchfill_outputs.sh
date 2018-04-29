@@ -13,7 +13,7 @@ do
 	let p=p+1
 	#echo "$p"
 	#less $file >> prueba$p.txt
-	../../saf/searchfill $file $VACOVP -L $Lx $Ly $Lz -a $a --struct $Struc --pbc $PBC >>Output_vacancies_file_"$p".txt
+	../../saf/searchfill $file $VACOVP -L $Lx $Ly $Lz -a $a --struct $Struc --pbc $PBC | tail -n 1 >>Output_vacancies_file.txt
 done 
 
 #date
