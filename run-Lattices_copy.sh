@@ -2,10 +2,10 @@
 Element="Li"
 Type="bcc"
 Constant=3.51
-NX=2
-NY=2
+NX=5
+NY=5
 NZ=2
-Ouputs=2
+Ouputs=100
 PV=50.0
 
 date

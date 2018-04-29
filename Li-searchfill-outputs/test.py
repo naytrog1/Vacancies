@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
 import numpy as np
-a = np.loadtxt('prueba.txt',usecols=5)
+a = np.loadtxt('Output_vacancies_file.txt',usecols=5)
 print(a)
-print('0')
-print('1')
