@@ -1,8 +1,8 @@
 #!/bin/bash
 a=3.51       # Lattice parameter of gold (Au)
-Lx=7.02 
-Ly=7.02
-Lz=7.02 
+Lx=17.55 
+Ly=17.55
+Lz=7.02
 VACOVP=0.16  # This paremeter must be set for each case. .76 is good for FCC
 PBC="true"
 Struc="BCC"
