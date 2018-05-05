@@ -8,7 +8,7 @@ PBC="true"
 Struc="BCC"
 
 p=0
-for file in ~/practica1/Vacancies/Li-bcc/*
+for file in ~/practica1/Vacancies/Li-bcc-5-5-2/*
 do
 	let p=p+1
 	#echo "$p"
