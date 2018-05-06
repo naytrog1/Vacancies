@@ -1,12 +1,12 @@
 #!/bin/bash
-Element="Li"
-Type="bcc"
-Constant=3.51
-NX=5
+Element="Au"
+Type="fcc"
+Constant=4.08
+NX=10
 NY=5
-NZ=2
+NZ=5
 Ouputs=1000
-PV=50.0
+PV=25.0
 
 date
 ./Lattices_copy.py -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -o $Ouputs -v $PV
