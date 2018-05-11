@@ -1,9 +1,9 @@
 #!/bin/bash
-Element="Au"
-Type="fcc"
-Constant=4.08
+Element="Na"
+Type="bcc"
+Constant=4.29
 NX=10
-NY=5
+NY=10
 NZ=5
 Ouputs=1000
 PV=25.0
