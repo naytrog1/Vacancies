@@ -5,7 +5,7 @@ Constant=4.29
 NX=10
 NY=10
 NZ=5
-Ouputs=1000
+Ouputs=1
 PV=25.0
 
 date
