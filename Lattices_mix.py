@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
 import numpy as np
 import argparse
-#vmd gdis xmakemol xcrysden vesta
+#vmd gdis xmakemol xcrysden vesta vasp. Programs to vizualize.
 
 '''Cubic Lattice Cells Function'''
 
-def Lattice(Atom,Type,a,NX,NY,NZ):
-	Matrix = np.empty((0,3),object) #object to combine string and floats
-	if Type == 'sc':
-		Base = np.array([[0,0,0]], float)
-		Base = Base*a
-	elif Type == 'bcc':
-		Base = np.array([[0,0,0],[0.5,0.5,0.5]], float)
-		Base = Base*a
-	elif Type == 'fcc':
-		Base = np.array([[0,0,0],[0.0,0.5,0.5],[0.5,0.0,0.5],[0.5,0.5,0.0]], float)
-		Base = Base*a
-	else: raise ValueError('Not a Supported(or Valid) Lattice')
+def Lattice(Atom,Base,a,NX,NY,NZ):
+	Matrix = np.empty((0,3),object) #Empty matrix array, data type object to combine string and floats.
+
+	Base = np.array(Base, float)
+	Base = Base * a
 
 	'''Unitary Cell'''
 	uc = np.array([[a,0,0],[0,a,0],[0,0,a]])
@@ -54,8 +47,9 @@ def Main():
 	
 	'''Required Arguments'''
 
-	parser.add_argument("-e","--Element",metavar='',help="Quimical Element",required=True,type=str)
-	parser.add_argument("-t","--Type",metavar='',help="Lattice Type",required=True,type=str)
+	#parser.add_argument("-e","--Element",metavar='',help="Quimical Element",required=True,type=str)
+	#parser.add_argument("-b","--Base",metavar='',help="Element Base",required=True,type=list)
+	parser.add_argument("-eb",metavar='',help='Quimical Element and Base of it',required=True,action='append',nargs='+',dest='Bases')
 	parser.add_argument("-a","--Constant",metavar='',help="Lattice Constant",required=True,type=float)
 	parser.add_argument("-nx","--NX",metavar='',help="Copies in X",required=True,type=int)
 	parser.add_argument("-ny","--NY",metavar='',help="Copies in Y",required=True,type=int)
@@ -66,23 +60,43 @@ def Main():
 	
 	parser.add_argument("-v","--Pvacancies",metavar='',help="Create the percentage of vacancies",type=float)
 
+	'''working'''
+	
 	args = parser.parse_args()
-	for i in range(args.Outputs):
+	a = np.array(args.Bases,dtype=object)
+	first = a[0,0] 	#first element on command line
+	dict = {first:[]}
+	for i in a:
+		p = i[0]
+		q = i[1:]; q = list(map(float,q))
+		if p in dict:
+			dict[p].append(q)
+		if p not in dict:
+			dict[p] = [q]
+	g = dict.keys() #Quimical Elements are the keys in the dictionary
 
-		N_atoms, Matrix = Lattice(args.Element,args.Type,args.Constant,args.NX,args.NY,args.NZ)
-		
-		'''Save the perfect Latticce'''
+	for j in g:
+		Base = dict[str(j)]
+		Element = j
+		print(Element,Base)
 
-		#np.savetxt(args.Element+'-'+args.Type+'-perfect-output_'+str(i+1)+'.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
-		#				header=str(N_atoms)+'\n', comments="")
+		for i in range(args.Outputs):
+			print(i)
 
-		'''Save the Latticce with vacancies'''
+			N_atoms, Matrix = Lattice(Element,Base,args.Constant,args.NX,args.NY,args.NZ)
+			
+			'''Save the perfect Latticce'''
 
-		if args.Pvacancies:
+			#np.savetxt(args.Element+'-'+args.Type+'-perfect-output_'+str(i+1)+'.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
+			#				header=str(N_atoms)+'\n', comments="")
 
-			N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.Pvacancies)
-			np.savetxt(args.Element+'-'+args.Type+'-vacancies-output_'+str(i+1)+'.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
-						header=str(N_atoms)+'\n', comments="")
+			'''Save the Latticce with vacancies'''
+
+			if args.Pvacancies:
+
+				N_atoms, Matrix = Vacancies_Lattice(N_atoms,Matrix,args.Pvacancies)
+				np.savetxt(str(Element)+'-vacancies-output_'+str(i+1)+'.xyz',Matrix,fmt="%s %5.4f %5.4f %5.4f", \
+							header=str(N_atoms)+'\n', comments="")
 
 if __name__ == '__main__':
 	Main()

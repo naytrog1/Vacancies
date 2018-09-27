@@ -6,7 +6,7 @@ NX=10
 NY=10
 NZ=5
 Ouputs=1
-PV=25.0
+PV=.0
 
 date
 ./Lattices_copy.py -e $Element -t $Type -a $Constant -nx $NX -ny $NY -nz $NZ -o $Ouputs -v $PV

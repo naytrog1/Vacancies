@@ -3,5 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 a = np.loadtxt('Output_vacancies_Au-fcc-10-5-5.txt',usecols=5)
 plt.hist(a,100)
+plt.xlabel("Vacancias Encontradas")
+plt.ylabel("Cantidad de Archivos")
 plt.show()
-print(a)
