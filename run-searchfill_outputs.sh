@@ -12,20 +12,20 @@ a=5.62       # Lattice parameter of gold (Au)
 Lx=11.24
 Ly=11.24
 Lz=11.24
-VACOVP=0.76  # This paremeter must be set for each case. .76 is good for FCC
-PBC="false"
+VACOVP=0.16  # This paremeter must be set for each case. .76 is good for FCC
+PBC="fase"
 Struc="FCC"
 
 if [ "$1" == "" ]; then
  echo "USAGE:"
- echo "     ./run-searchfill  input-file.xyz"
+ echo "     ./run-searchfill_outputs.sh  input-file.xyz"
  exit
 fi
 
 date
 echo ""
 echo "############################################################"
-../saf/searchfill NaCl_2-2-2_Vacancies.xyz $VACOVP -L $Lx $Ly $Lz -a $a --struct $Struc --pbc $PBC
+../saf/searchfill $1 $VACOVP -L $Lx $Ly $Lz -a $a --struct $Struc --pbc $PBC
 echo "############################################################"
 echo ""
 date
