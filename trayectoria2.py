@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import numpy as np
 import matplotlib.pyplot as plt
-
+import matplotlib
+matplotlib.use('Agg')
 d, vis = .1,0.00149
 ro = 1.22/4000. #fluido/esfera
 
@@ -78,6 +79,7 @@ for i,c in zip(range(len(rad)),colors):
 	#print(colors[i])
 	#,color=colors[i])
 #plt.legend(loc='best')
+#plt.savefig('bla.png')
 plt.xlabel("Distancia x")
 plt.ylabel("Distancia y")
 plt.ylim(0,)
