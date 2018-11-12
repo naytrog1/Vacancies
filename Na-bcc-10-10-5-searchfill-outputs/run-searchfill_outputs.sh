@@ -12,7 +12,7 @@ a=4.29       # Lattice parameter of gold (Au)
 Lx=42.9 
 Ly=42.9
 Lz=21.45
-VACOVP=0.16  # This paremeter must be set for each case. .76 is good for FCC
+VACOVP=0.26  # This paremeter must be set for each case. .76 is good for FCC
 PBC="true"
 Struc="BCC"
 

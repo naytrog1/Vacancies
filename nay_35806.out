@@ -1,8 +1,8 @@
-Mon Oct  1 21:53:38 PDT 2018
+Thu Nov  8 19:40:37 PST 2018
 
 ############################################################
-ANALYZING NaCl_2-2-2_Vacancies2.xyz
-Using VACOVP = 0.26
+ANALYZING NaCl_2-2-2_Vacancies1.xyz
+Using VACOVP = 0.76
 Using cell dimensions LX= 11.24 LY= 11.24 LZ= 11.24
 Lattice parameter: a= 5.62
 Stucture Type: FCC
@@ -12,48 +12,48 @@ Using value R0= 2.39849
 Periodic Boundary Conditions: False
 
 NATOMS=124 old_vac= 0
--> 124 atoms, CoM = 2.74202, 2.76468, 2.81
-Average overlap is : 33.332
+-> 124 atoms, CoM = 2.71935, 2.78734, 2.78734
+Average overlap is : 33.7941
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.16652/63.6655
-        at atoms 37 and 123 respectively.
-Min/Max coordin is : 4/68
+Min/Max overlap is : 1.12489/64.1249
+        at atoms 2 and 123 respectively.
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
 Progress : 30% 
 Progress : 40% 
--> Found one vacancy! (ov=0.0152931, coord=1) at -0.809476, 13.6487, -0.865559
+-> Found one vacancy! (ov=0.0224176, coord=1) at 13.655, 2.13987, -0.853732
 -> Total vacancies up to now: 1
--> Found one vacancy! (ov=0.019049, coord=1) at -0.970304, -0.489509, 13.7997
+-> Found one vacancy! (ov=0.0640482, coord=2) at 10.845, -0.670126, -0.853732
 -> Total vacancies up to now: 2
--> Found one vacancy! (ov=0.154545, coord=7) at 8.39316, 5.72192, -0.776363
+-> Found one vacancy! (ov=0.491659, coord=3) at -0.764177, 9.14445, -0.937004
 -> Total vacancies up to now: 3
 Progress : 50% 
 Progress : 60% 
 Progress : 70% 
 Progress : 80% 
 Progress : 90% 
+-> Found one vacancy! (ov=0.461923, coord=3) at -0.953236, -0.974722, 9.56122
+-> Total vacancies up to now: 4
 Finishing Vacancies Search Process 
 -> No more vacancies found.
 
--> Step= 0   Vacancies= 3
+-> Step= 0   Vacancies= 4
 **************************************************************************
 
-NATOMS=127 old_vac= 3
--> 127 atoms, CoM = 2.72932, 2.84804, 2.83935
-Average overlap is : 32.5712
+NATOMS=128 old_vac= 4
+-> 128 atoms, CoM = 2.81236, 2.77554, 2.75427
+Average overlap is : 32.7855
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
+Min/Max overlap is : 1.06405/64.1249
         at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/68
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
 Progress : 30% 
 Progress : 40% 
--> Found one vacancy! (ov=0.0790184, coord=1) at 13.6465, -0.720041, -0.025138
--> Total vacancies up to now: 1
 Progress : 50% 
 Progress : 60% 
 Progress : 70% 
@@ -62,16 +62,16 @@ Progress : 90%
 Finishing Vacancies Search Process 
 -> No more vacancies found.
 
--> Step= 1   Vacancies= 1
+-> Step= 1   Vacancies= 0
 **************************************************************************
 
-NATOMS=128 old_vac= 1
--> 128 atoms, CoM = 2.81461, 2.82016, 2.81697
-Average overlap is : 32.3258
+NATOMS=128 old_vac= 0
+-> 128 atoms, CoM = 2.81236, 2.77554, 2.75427
+Average overlap is : 32.7855
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
+Min/Max overlap is : 1.06405/64.1249
         at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/1395025194
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
@@ -89,12 +89,12 @@ Finishing Vacancies Search Process
 **************************************************************************
 
 NATOMS=128 old_vac= 0
--> 128 atoms, CoM = 2.81461, 2.82016, 2.81697
-Average overlap is : 32.3258
+-> 128 atoms, CoM = 2.81236, 2.77554, 2.75427
+Average overlap is : 32.7855
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
+Min/Max overlap is : 1.06405/64.1249
         at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/1395025194
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
@@ -112,12 +112,12 @@ Finishing Vacancies Search Process
 **************************************************************************
 
 NATOMS=128 old_vac= 0
--> 128 atoms, CoM = 2.81461, 2.82016, 2.81697
-Average overlap is : 32.3258
+-> 128 atoms, CoM = 2.81236, 2.77554, 2.75427
+Average overlap is : 32.7855
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
+Min/Max overlap is : 1.06405/64.1249
         at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/1395025194
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
@@ -135,12 +135,12 @@ Finishing Vacancies Search Process
 **************************************************************************
 
 NATOMS=128 old_vac= 0
--> 128 atoms, CoM = 2.81461, 2.82016, 2.81697
-Average overlap is : 32.3258
+-> 128 atoms, CoM = 2.81236, 2.77554, 2.75427
+Average overlap is : 32.7855
 Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
+Min/Max overlap is : 1.06405/64.1249
         at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/1395025194
+Min/Max coordin is : 3/71
 Limit overlap choosed is : 4.31371
 Progress : 10% 
 Progress : 20% 
@@ -157,30 +157,7 @@ Finishing Vacancies Search Process
 -> Step= 5   Vacancies= 0
 **************************************************************************
 
-NATOMS=128 old_vac= 0
--> 128 atoms, CoM = 2.81461, 2.82016, 2.81697
-Average overlap is : 32.3258
-Ideal overlap is   : 4.31371
-Min/Max overlap is : 1.01529/63.6655
-        at atoms 124 and 123 respectively.
-Min/Max coordin is : 2/1395025194
-Limit overlap choosed is : 4.31371
-Progress : 10% 
-Progress : 20% 
-Progress : 30% 
-Progress : 40% 
-Progress : 50% 
-Progress : 60% 
-Progress : 70% 
-Progress : 80% 
-Progress : 90% 
-Finishing Vacancies Search Process 
--> No more vacancies found.
-
--> Step= 6   Vacancies= 0
-**************************************************************************
-
 -> TOTAL NUMBER OF VACANCIES:  4
 ############################################################
 
-Mon Oct  1 21:54:12 PDT 2018
+Thu Nov  8 19:41:09 PST 2018

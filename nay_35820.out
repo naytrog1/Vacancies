@@ -1,0 +1,309 @@
+Sun Nov 11 17:28:15 PST 2018
+
+############################################################
+ANALYZING NaCl_2-2-2_Vacancies1.xyz
+Using VACOVP = 0.76
+Using cell dimensions LX= 11.24 LY= 11.24 LZ= 11.24
+Lattice parameter: a= 5.62
+Stucture Type: FCC
+Using value R1= 3.97394
+Using value R2= 5.62
+Using value R0= 2.39849
+Periodic Boundary Conditions: False
+
+NATOMS=61 old_vac= 0
+-> 61 atoms, CoM = 5.52787, 5.66607, 5.66607
+Average overlap is : 1.30711
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.12489/1.49957
+        at atoms 0 and 56 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.30711
+-> Found one vacancy! (ov=0.0487674, coord=1) at 10.3983, -0.785197, -0.782093
+-> Total vacancies up to now: 1
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 0   Vacancies= 1
+**************************************************************************
+
+NATOMS=62 old_vac= 1
+-> 62 atoms, CoM = 5.60642, 5.56201, 5.56206
+Average overlap is : 1.30373
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.04877/1.49957
+        at atoms 61 and 56 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.30373
+-> Found one vacancy! (ov=0.441289, coord=3) at -0.941111, -0.942138, 2.28453
+-> Total vacancies up to now: 1
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 1   Vacancies= 1
+**************************************************************************
+
+NATOMS=63 old_vac= 1
+-> 63 atoms, CoM = 5.50249, 5.45877, 5.51004
+Average overlap is : 1.31292
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.04877/1.49957
+        at atoms 61 and 56 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.31292
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+-> Found one vacancy! (ov=0.426015, coord=3) at -0.97106, 3.34793, -0.977736
+-> Total vacancies up to now: 1
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 2   Vacancies= 1
+**************************************************************************
+
+NATOMS=64 old_vac= 1
+-> 64 atoms, CoM = 5.40135, 5.42579, 5.40867
+Average overlap is : 1.32134
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.04877/1.49957
+        at atoms 61 and 56 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.32134
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 3   Vacancies= 0
+**************************************************************************
+
+NATOMS=64 old_vac= 0
+-> 64 atoms, CoM = 5.40135, 5.42579, 5.40867
+Average overlap is : 1.32134
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.04877/1.49957
+        at atoms 61 and 56 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.32134
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+-> Found one vacancy! (ov=0.437317, coord=3) at -0.974118, -0.994325, 7.53582
+-> Total vacancies up to now: 1
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 4   Vacancies= 1
+**************************************************************************
+
+NATOMS=65 old_vac= 1
+-> 65 atoms, CoM = 5.30326, 5.32702, 5.44139
+Average overlap is : 1.32985
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.04877/1.6146
+        at atoms 61 and 1 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.32985
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+-> Found one vacancy! (ov=0.0266638, coord=2) at 13.6985, 1.82764, -0.924944
+-> Total vacancies up to now: 1
+Progress : 70% 
+Progress : 80% 
+-> Found one vacancy! (ov=0.442582, coord=3) at 2.65647, -0.908248, -0.938134
+-> Total vacancies up to now: 2
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 5   Vacancies= 2
+**************************************************************************
+
+NATOMS=67 old_vac= 2
+-> 67 atoms, CoM = 5.38906, 5.18173, 5.25116
+Average overlap is : 1.33402
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.65651
+        at atoms 65 and 0 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.33402
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+-> Found one vacancy! (ov=0.448843, coord=4) at -0.862325, 7.93792, -0.994661
+-> Total vacancies up to now: 1
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 6   Vacancies= 1
+**************************************************************************
+
+NATOMS=68 old_vac= 1
+-> 68 atoms, CoM = 5.29713, 5.22226, 5.15931
+Average overlap is : 1.3423
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.71447
+        at atoms 65 and 3 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.3423
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 7   Vacancies= 0
+**************************************************************************
+
+NATOMS=68 old_vac= 0
+-> 68 atoms, CoM = 5.29713, 5.22226, 5.15931
+Average overlap is : 1.3423
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.71447
+        at atoms 65 and 3 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.3423
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 8   Vacancies= 0
+**************************************************************************
+
+NATOMS=68 old_vac= 0
+-> 68 atoms, CoM = 5.29713, 5.22226, 5.15931
+Average overlap is : 1.3423
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.71447
+        at atoms 65 and 3 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.3423
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 9   Vacancies= 0
+**************************************************************************
+
+NATOMS=68 old_vac= 0
+-> 68 atoms, CoM = 5.29713, 5.22226, 5.15931
+Average overlap is : 1.3423
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.71447
+        at atoms 65 and 3 respectively.
+Min/Max coordin is : 3/12
+Limit overlap choosed is : 1.3423
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+-> Found one vacancy! (ov=0.0378756, coord=1) at 13.1482, -1.84378, 2.41094
+-> Total vacancies up to now: 1
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 10   Vacancies= 1
+**************************************************************************
+
+NATOMS=69 old_vac= 1
+-> 69 atoms, CoM = 5.41091, 5.11985, 5.11947
+Average overlap is : 1.33844
+Ideal overlap is   : 4.31371
+Min/Max overlap is : 1.02666/1.71447
+        at atoms 65 and 3 respectively.
+Min/Max coordin is : 2/12
+Limit overlap choosed is : 1.33844
+Progress : 10% 
+Progress : 20% 
+Progress : 30% 
+Progress : 40% 
+Progress : 50% 
+Progress : 60% 
+Progress : 70% 
+Progress : 80% 
+Progress : 90% 
+Finishing Vacancies Search Process 
+-> No more vacancies found.
+
+-> Step= 11   Vacancies= 0
+**************************************************************************
+
+-> TOTAL NUMBER OF VACANCIES:  8
+############################################################
+
+Sun Nov 11 17:28:36 PST 2018
